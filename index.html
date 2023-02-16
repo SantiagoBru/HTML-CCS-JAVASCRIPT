@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cantidad de Habitantes</title>
+        <link type="image/png" sizes="32x32" rel="icon" href="favicon.png">
+        <link rel="stylesheet" href="estilos.css"/>
+    </head>
+
+    <body>
+        <div id="container">
+
+            <header>
+                <img src="RyM.jpg" id="logo">
+                <h1>Trabajo práctico N°2 - Grupo 3</h1>
+            </header>
+            <div id="contenido">
+                <div id="bienvenido">
+                    <h2 class="sub">Bienvenido!</h2>
+                    <p>Primero debe cargar los datos de la api para luego poder mostrar el contenido traído de Strapi.</p>
+                </div>
+                <br>
+                <div id="strapiTable">
+                    <h2 class="sub">Cantidad Habitantes de Rick&Morty</h2>
+                    <table border="1"  id="tabla">
+
+                        <tbody id="body">
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="graf"></div>
+
+            </div>
+            <aside id="barra">
+                <ul>
+                    <li><a onclick="cargarDatos()" href="#">Cargar datos</a></li>
+                    <li><a onclick="mostrarDatos()" href="#" >Mostrar datos</a></li>
+                </ul>
+            </aside>
+
+            <div class="clearfix"></div>
+
+            <footer>
+                <p>Tecnología y gestión web 2022</p>
+            </footer>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="script.js"></script>
+
+        <div class="scaled">
+            <br>
+            <br>
+            <canvas id="grafica"></canvas>
+            
+            </div>
+            
+    </body>
+</html>
